@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iceberg Chart Editor</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="icon" href="resources/iceberg chart.jpg" type="image/x-icon">
+  </head>
+  <body>
+    <div id="adding_chart" class="overlay">
+      <span>text: </span>
+      <input type="text" id="text_chart" />
+      <span>link (not required): </span>
+      <input type="url" id="link_chart" />
+      
+          <fieldset>
+            <div>
+                <label for="sfw_radio">SFW</label>
+                <input type="radio" name="select_safety" id="sfw_radio" value="SFW" checked>
+
+                <label for="nsfw_radio">NSFW</label>
+                <input type="radio" name="select_safety" id="nsfw_radio" value="NSFW">
+          
+                <label for="nsfl_radio">NSFL</label>
+                <input type="radio" name="select_safety" id="nsfl_radio" value="NSFL">
+            </div>
+          </fieldset>
+
+      <button id="submit_input">Submit</button>
+      <button id="exitBtn">exit</button>
+    </div>
+
+    <div id="iceberg_chart">
+      <div class="section_iceberg">
+        <div class="charts"></div>
+        <div class="placement phase_1">Known</div>
+      </div>
+
+      <div class="section_iceberg">
+        <div class="charts"></div>
+        <div class="placement phase_2">Less Known</div>
+      </div>
+
+      <div class="section_iceberg">
+        <div class="charts"></div>
+        <div class="placement phase_3">Obscure</div>
+      </div>
+
+      <div class="section_iceberg">
+        <div class="charts"></div>
+        <div class="placement phase_4">The Depths</div>
+      </div>
+
+      <div class="section_iceberg">
+        <div class="charts"></div>
+        <div class="placement phase_5">Deepest Depths</div>
+      </div>
+    </div>
+  </body>
+</html>
